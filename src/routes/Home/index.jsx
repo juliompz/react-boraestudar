@@ -1,8 +1,10 @@
 import React from "react"
-import { Outlet } from "react-router-dom"
+import Navbar from "../../components/navbar"
+import Banner from "../../components/Banner"
 
 export default function Home () {
     return <>
-        
+        <Navbar />
+        <Banner />
     </>
 }
