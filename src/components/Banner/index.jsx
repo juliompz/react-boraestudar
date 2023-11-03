@@ -1,4 +1,6 @@
 import React from "react";
+
+import "../../routes/Home/home.css"
 import './banner.css'
 
 export default function Banner () {

@@ -1,0 +1,22 @@
+
+@media screen and (max-width: 1110px){
+
+    /* PARTE DA BARRA DE NAVEGACAO */
+    .navbar-logo img{
+        width: 150px;
+        height: 50px;
+        margin-left: -25px !important;
+    }
+
+    .navbar-itens {
+        display: none !important;
+    }
+
+    .btn-abrir-menu {
+        display: block !important;
+        
+    }
+    /* ------------------ */
+
+    /* BANNER */
+}
