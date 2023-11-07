@@ -25,12 +25,12 @@ export default function Navbar () {
 
     <div className="navbar">
         <div className="navbar-logo">
-            <img src={logo} alt="logo-boraestudar" />
+            <Link to={'/'}><img src={logo} alt="logo-boraestudar" /></Link>
         </div>
 
         <div className="navbar-itens">
-            <p><Link>Faculdades</Link></p>
-            <p><Link>Cursos</Link></p>
+            <p><Link to={'/faculdades'}>Faculdades</Link></p>
+            <p><Link to={'/cursos'}>Cursos</Link></p>
             <p><Link>Profissões</Link></p>
             <p><Link>Sobre Nós</Link></p>
             <p><Link>Ajuda</Link></p>
@@ -50,7 +50,7 @@ export default function Navbar () {
 
                     <div className="navbar-itens-mobile">
                         <p><Link>Faculdades</Link></p>
-                        <p><Link>Cursos</Link></p>
+                        <p><Link to={'/cursos'}>Cursos</Link></p>
                         <p><Link>Profissões</Link></p>
                         <p><Link>Sobre Nós</Link></p>
                         <p><Link>Ajuda</Link></p>

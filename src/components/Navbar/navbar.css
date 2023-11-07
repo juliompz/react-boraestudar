@@ -4,6 +4,9 @@
     margin: 10px 50px;
     height: 50px;
 }
+.navbar-logo img{
+    width: 153px;
+}
 
 .navbar-itens {
     display: flex;
@@ -21,6 +24,13 @@
     border-radius: 8px;
     padding: 10px 20px;
     margin-left: 70px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.navbar-itens .navbar-entrar:hover{
+    background-color: #104EFF;
+    color: #fff;
 }
 
 /* menu mobile */

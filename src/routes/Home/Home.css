@@ -19,4 +19,35 @@
     /* ------------------ */
 
     /* BANNER */
+
+    .filter{
+        height: auto !important;
+        padding: 0 0 10px;
+    }
+
+    .filter-boxes{
+        flex-direction: column;
+    }
+
+    .filter-boxes .input-box{
+        width: 90% !important;
+    }
+
+    .filter-boxes .input-box p{
+        padding-bottom: 5px;
+    }
+
+    .filter-boxes .input-box input{
+        width: 90% !important;
+    }
+
+    .input-box p {
+        font-size: 12px !important;
+    }
+
+    .filter-content button {
+        width: 90% !important;
+    }
+
+    /* -------------- */
 }
