@@ -1,0 +1,39 @@
+
+.loading{
+    position: fixed;
+    width: 110px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.loading-text{
+    color: #104EFF;
+}
+
+.loading img{
+    width: 70px;
+    height: 70px;
+}
+
+@keyframes loadingDots {
+    0%, 20% {
+      content: ".";
+    }
+    40% {
+      content: "..";
+    }
+    60% {
+      content: "...";
+    }
+    80%, 100% {
+      content: "";
+    }
+  }
+
+  .loading-text::after {
+    content: "...";
+    display: inline-block;
+    animation: loadingDots 1s infinite steps(1);
+  }
