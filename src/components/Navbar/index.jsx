@@ -31,38 +31,29 @@ export default function Navbar () {
         <div className="navbar-itens">
             <p><Link to={'/faculdades'}>Faculdades</Link></p>
             <p><Link to={'/cursos'}>Cursos</Link></p>
-            <p><Link>Profissões</Link></p>
             <p><Link>Sobre Nós</Link></p>
-            <p><Link>Ajuda</Link></p>
-            <p className="navbar-entrar"><Link>Entrar</Link></p>
             
         </div>
 
         <div className="btn-abrir-menu">
             <BsList onClick={abrirMenu}/>
         </div>
-        {menuOpen && (
-            <>
-                <div className="menu-mobile" id="menu-mob">
-                    <div className="btn-fechar">
-                        <AiOutlineClose onClick={fecharMenu}/>
-                    </div>
-
-                    <div className="navbar-itens-mobile">
-                        <p><Link>Faculdades</Link></p>
-                        <p><Link to={'/cursos'}>Cursos</Link></p>
-                        <p><Link>Profissões</Link></p>
-                        <p><Link>Sobre Nós</Link></p>
-                        <p><Link>Ajuda</Link></p>
-                    </div>
-                
+            <div className={`menu-mobile ${menuOpen ? 'visible' : ''}`} id="menu-mob">
+                <div className="btn-fechar">
+                    <AiOutlineClose onClick={fecharMenu}/>
                 </div>
 
-                <div className="overlay-menu"></div>
-            </>
-        )}
+                <div className="navbar-itens-mobile">
+                    <p><Link>Faculdades</Link></p>
+                    <p><Link to={'/cursos'}>Cursos</Link></p>
+                    <p><Link>Profissões</Link></p>
+                    <p><Link>Sobre Nós</Link></p>
+                    <p><Link>Ajuda</Link></p>
+                </div>
+            
+            </div>
 
-
+            <div className={`overlay-menu ${menuOpen ? 'visible' : 'hidden'}`}></div>
     </div>
         
     </>
