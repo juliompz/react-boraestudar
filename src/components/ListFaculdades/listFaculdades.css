@@ -1,0 +1,15 @@
+.box-faculdade{
+    cursor: pointer;
+    padding: 5px;
+    border: 1px dashed #bcbcbd;
+}
+
+.faculdade-nome .faculdade-estrelas{
+    display: flex;
+    margin-left: 5px;
+    margin-top: 8px;
+}
+
+.faculdade-estrelas svg {
+    color: yellow;
+}

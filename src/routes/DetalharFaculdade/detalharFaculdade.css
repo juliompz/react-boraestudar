@@ -1,0 +1,28 @@
+
+.faculdade-container {
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+.faculdade-title {
+    width: min-content;
+}
+
+.faculdade-title h1.t{
+    color: #104EFF;
+    border-bottom: 1px solid;
+    margin-bottom: 50px;
+}
+
+.faculdade-info h1{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+
+.imagem {
+    width: 333px;
+    height: 333px;
+    background-color: red;
+}

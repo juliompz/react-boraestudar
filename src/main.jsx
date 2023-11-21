@@ -7,6 +7,7 @@ import Home from "./routes/Home"
 import Cursos from './routes/Cursos/index.jsx'
 import DetalharCurso from './routes/DetalharCurso/index.jsx'
 import Faculdades from './routes/Faculdades/index.jsx'
+import DetalharFaculdade from './routes/DetalharFaculdade/index.jsx'
 
 const router = createBrowserRouter ([
   {
@@ -19,7 +20,12 @@ const router = createBrowserRouter ([
       {
         path:"/faculdades",
         element: <Faculdades />
+      },      
+      {
+        path:"/faculdade/:id",
+        element: <DetalharFaculdade />
       },
+      
       {
         path:"/cursos",
         element: <Cursos/>

@@ -1,0 +1,81 @@
+
+section {
+    margin-left: 40px;
+}
+
+.curso-info{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.curso-info h1.title-curso {
+    font-size: 40px;
+    color: #104EFF;
+    margin-bottom: 50px;
+    border-bottom: 1px solid;
+    width: min-content;
+}
+
+.curso-nome {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.curso-nome h1 {
+    font-size: 20px;
+}
+
+.curso-nome p {
+    line-height: 50px;
+    font-size: 10px;
+}
+
+.imagem {
+    width: 333px;
+    height: 333px;
+    background-color: red;
+}
+
+.descricao {
+    width: 500px;
+    padding-top: 15px;
+}
+
+.descricao h1 {
+    font-size: 18px;
+}
+
+.descricao p {
+    font-size: 14px;
+}
+
+/* PARTE DAS FACULDADES */
+
+
+.faculdades-disp {
+    margin-top: 30px;
+    margin-right: 30px
+    
+}
+
+.facul-onde{
+    margin-bottom: 20px;
+}
+.facul-onde h1 {
+    color: #104EFF;
+}
+
+.facul-onde h2 {
+    font-size: 15px;
+}
+
+.list-faculdades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.faculdade-nome{
+    display: flex;
+}
+
