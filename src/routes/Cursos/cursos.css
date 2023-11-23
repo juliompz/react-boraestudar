@@ -7,125 +7,29 @@
     background-color: #104EFF;
 }
 
+.list-content {
+  padding-left: 100px;
+}
+
 
 .list-content-title{
-  margin: 10px 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-.list-content-title h1 {
+.titulo-list-cursos{
+  margin-top: 13px;
+  margin-bottom: 50px;
+}
+
+.titulo-list-cursos strong {
   color: #104EFF;
-  font-size: 20px;
-}
-.box-pesquisar {
-    display: flex;
-    margin-left: 20px;
-    justify-content: space-between;
+  font-weight: 500;
 }
 
-/* PARTE DE PESQUISA */
 
-/* INPUT PESQUISA */
-.search-container{
-    width: 490px;
-    display: block;
-    margin: 0 auto;
-    height: 80px;
-  }
-  
-input#search-bar{
-    margin: 0 auto;
-    width: 90%;
-    height: 40px;
-    padding: 0 20px;
-    font-size: 1rem;
-    border: 1px solid #D0CFCE;
-    border-radius: 5px;
-    outline: none;
-    &:focus{
-      border: 1px solid #000000;
-      transition: 0.35s ease;
-      color: #000000;
-      &::-webkit-input-placeholder{
-        transition: opacity 0.45s ease; 
-          opacity: 0;
-       }
-      &::-moz-placeholder {
-        transition: opacity 0.45s ease; 
-          opacity: 0;
-       }
-      &:-ms-placeholder {
-       transition: opacity 0.45s ease; 
-         opacity: 0;
-       }    
-     }
-}
-  
-.search-icon{
-    position: relative;
-    float: right;
-    width: 60px;
-    height: 60px;
-    top: -52px;
-    right: 0px;
-    color: #104EFF;
-  }
 
-/* fim input pesquisa */
-.buscar-curso{
-    display: flex;
-    padding-top: 25px;
-    padding-right: 50px;
-}
-
-.title{
-    color: #fff;
-    display: flex;
-    padding-left: 25px;
-    padding-top: 25px;
-}
-
-.title h1 {
-    font-size: 30px;
-}
-.title p {
-    font-size: 10px;
-    line-height: 60px;
-    padding: 3px;
-
-}
-
-.select-box {
-    display: flex;
-    padding: 0 150px;
-    gap: 15px;
-    flex-wrap: wrap;
-}
-
-.box-pesquisa{
-    background-color: #fff;
-    position: fixed;
-    width: 480px;
-    margin-top: 45px;
-    border-radius: 8px;
-    border: 3px solid #104EFF;
-  }
-  
-.hidden {
-    display: none;
-}
-  
-.visible {
-    display: block; /* ou qualquer outra propriedade que você desejar */
-}
-
-.box-pesquisa li {
-    padding: 5px;
-    margin-top: 4px;
-    margin-bottom: 4px;
-    background-color: #1050ff14;
-    cursor: pointer;
-}
-
-.box-pesquisa li:hover{
-  background-color: #1050ff54;
+.listar-cursos a{
+  display: flex;
+  width: min-content;
 }
