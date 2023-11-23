@@ -1,0 +1,22 @@
+
+.botaoVoltar{
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    width: 108px;
+    height: 40px;
+    color: #104EFF;
+    border-radius: 8px;
+    border: 2px solid #104EFF;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.botaoVoltar p, .botaoVoltar svg {
+    margin-left: 8px;
+}
+
+.botaoVoltar:hover{
+    background-color: #104EFF;
+    color: #fff;
+}
