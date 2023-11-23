@@ -25,7 +25,6 @@ img{
 .rodape-div{
     display: flex;
     flex-wrap: wrap;
-    width:100%;
     margin: auto;
     align-items: stretch;
     padding: 10px 0 0 10px;
