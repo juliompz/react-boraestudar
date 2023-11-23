@@ -1,0 +1,16 @@
+
+  
+.veja-mais button {
+    cursor: pointer;
+    width: 99px;
+    height: 38px;
+    background-color: #104EFF;
+    border: none;
+    color: #fff;
+    border-radius: 7px;
+    transition: 0.5s;
+}
+
+.veja-mais button:hover{
+  background-color: #1050ff93;
+}
