@@ -1,8 +1,15 @@
-.box-faculdade{
+
+
+.box-faculdade {
+    width: 550px;
+    display: flex;
     cursor: pointer;
     padding: 5px;
-    border: 1px dashed #bcbcbd;
+    border-bottom: 1px dashed #bcbcbd;
+    justify-content: space-between;
+    align-items: center;
 }
+
 
 .faculdade-nome .faculdade-estrelas{
     display: flex;
