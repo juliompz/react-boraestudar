@@ -1,0 +1,84 @@
+
+
+.container-area-faculdades{
+    margin-left: 90px;
+    margin-bottom: 25px;
+}
+
+.introducao {
+    margin-bottom: 14px;
+    margin-top: 35px;
+    gap: 3px;
+}
+
+.introducao h1, .introducao p {
+    font-size: 14px;
+}
+
+
+
+.faculdade-ranqueada {
+    text-align: center;
+    width: 337px;
+    height: 207px;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.content-faculdade-ranqueada{
+    padding-top: 23px;
+}
+
+.img-e-detalhe {
+    display: flex;
+}
+
+.img-faculdade{
+    padding: 0 20px;
+    text-align: start;
+    width: min-content;
+}
+
+.area-do-detalhe{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.nota-max-mec{
+    width: 139px;
+    height: 23px;
+    background-color: #104EFF;
+    color: #fff;
+    border-radius: 10px 0px 0 10px;
+}
+
+.nota-max-mec p {
+    padding-top: 5px;
+    font-size: 10px;
+}
+
+.info-faculdade {
+    text-align: start;
+    padding: 0 20px;
+}
+
+.info-faculdade h1 {
+    font-size: 14px;
+}
+
+.info-faculdade p {
+    font-size: 10px;
+}
+
+.swiper-button-prev, .swiper-button-next{
+    width: 40px;
+    border-radius: 8px;
+    font-size: 15px !important;
+    color: #fff;
+    background-color: #104EFF;
+}
+
+.swiper-button-prev::after, .swiper-button-next::after {
+    font-size: 15px !important;
+}
