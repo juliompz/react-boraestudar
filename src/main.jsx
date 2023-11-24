@@ -8,6 +8,7 @@ import Cursos from './routes/Cursos/index.jsx'
 import DetalharCurso from './routes/DetalharCurso/index.jsx'
 import Faculdades from './routes/Faculdades/index.jsx'
 import DetalharFaculdade from './routes/DetalharFaculdade/index.jsx'
+import DetalharCursoNaFaculdade from './routes/DetalharCursoNaFaculdade/index.jsx'
 
 const router = createBrowserRouter ([
   {
@@ -25,7 +26,10 @@ const router = createBrowserRouter ([
         path:"/faculdade/:id",
         element: <DetalharFaculdade />
       },
-      
+      {
+        path:"/faculdade/:faculdadeId/curso/:cursoId",
+        element: <DetalharCursoNaFaculdade />
+      },
       {
         path:"/cursos",
         element: <Cursos/>
