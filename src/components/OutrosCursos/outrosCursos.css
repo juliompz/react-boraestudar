@@ -1,0 +1,28 @@
+.outros-cursos{
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    padding: 5px 5px 20px 5px;
+    border-bottom: 1px solid #bcbcbd;
+}
+  
+.nome-outro-curso h1 {
+    color: #104EFF;
+    font-size: 19px;
+}
+  
+.nome-outro-curso strong {
+    color: #104EFF;
+    font-weight: 500;
+}
+
+.detalhes-do-curso {
+    display: flex;
+}
+
+.detalhes-do-curso p {
+    padding: 0 2px;
+    font-size: 10px;
+    color: #919191;
+}
+  
