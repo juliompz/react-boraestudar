@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 
-import axios from "axios";
-
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 
@@ -11,6 +9,9 @@ import Loading from "../../components/Loading";
 import ListFaculdades from "../../components/ListFaculdades";
 import PesquisarCurso from "../../components/PesquisarCurso";
 import BotaoVoltar from "../../components/BotaoVoltar";
+import blogfetch from "../../axios/config";
+
+import img from '../../assets/progr.jpg'
 
 
 export default function DetalharCurso() {
@@ -23,7 +24,7 @@ export default function DetalharCurso() {
     useEffect(() => {
         const DetalheCurso = async () => {
             try{
-                let response = await axios.get(`http://localhost:8000/cursos/${id}/`)
+                let response = await blogfetch.get(`cursos/${id}/`)
                 setCurso(response.data)
             }
             catch(error){
@@ -34,8 +35,9 @@ export default function DetalharCurso() {
 
         const FaculdadesCurso = async () => {
             try{
-                let response = await axios.get(`http://localhost:8000/curso/${id}/faculdades/`)
+                let response = await blogfetch.get(`curso/${id}/faculdades/`)
                 setFaculdades(response.data)
+                console.log(response.data)
                 setDadosCarregados(true)
             }
             catch(error){
@@ -64,15 +66,15 @@ export default function DetalharCurso() {
                 </div>
 
                 <div className="dividir-pagina">
-                    <section>
+                    <section className="sec">
                         <div className="curso-info">
                             <div className="img-curso">
-                                <div className="imagem"></div>
+                                <img src={img} alt="" />
                             </div>
 
                             <div className="descricao">
                                 <h1>Sobre o curso</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores molestiae quis tenetur minima animi est voluptatem aliquam eveniet? Nemo nulla deserunt iusto eveniet harum accusamus mollitia quibusdam esse debitis saepe.</p>
+                                <p>{curso.descricao}</p>
                             </div>
                         </div>
                     </section>
@@ -85,16 +87,17 @@ export default function DetalharCurso() {
                             </div>
                             
                             <div className="list-faculdades">
-                            {faculdades.map(faculdade => (
-                                
-                                <Link to={`/faculdade/${faculdade.faculdade_id}/`}>
-                                    <ListFaculdades 
-                                    faculdade_nome={faculdade.faculdade_nome}
-                                    faculdade_sigla={faculdade.faculdade_sigla}
-                                    />
-                                </Link>
+                                {faculdades.map(faculdade => (
+                                    
+                                    <Link to={`/faculdade/${faculdade.faculdade_id}/curso/${id}`}>
+                                        <ListFaculdades
+                                        key={faculdade.faculdade_sigla}
+                                        faculdade_nome={faculdade.faculdade_nome}
+                                        faculdade_sigla={faculdade.faculdade_sigla}
+                                        />
+                                    </Link>
 
-                                ))}
+                                    ))}
 
                             </div>
                         </div>

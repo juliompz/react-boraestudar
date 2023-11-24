@@ -6,14 +6,14 @@
 }
 
 .dividir-pagina{
+    width: 100%;
     display: flex;
     margin-top: 50px;
 }
 
-section {
+.sec{
     width: 50%;
     display: flex;
-    
 }
 .curso-info h1.title-curso {
     font-size: 40px;
@@ -36,10 +36,10 @@ section {
     font-weight: 500;
 }
 
-.imagem {
-    width: 333px;
-    height: 333px;
-    background-color: red;
+.img-curso img {
+    width: 255px;
+    height: 255px;
+    opacity: 60%;
 }
 
 .descricao {
@@ -58,6 +58,7 @@ section {
 /* PARTE DAS FACULDADES */
 
 section.sec2 {
+    width: 50%;
     display: flex;
     margin-left: 50px;
 }
