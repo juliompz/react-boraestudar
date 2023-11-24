@@ -10,24 +10,40 @@ import Footer from "../../components/Footer";
 import ListCursos from "../../components/ListCursos";
 import BotaoVoltar from "../../components/BotaoVoltar";
 import PesquisarCurso from "../../components/PesquisarCurso";
+import blogfetch from "../../axios/config";
 
 export default function Cursos() {
 
     const [search, setSearch] = useState("");
     const [cursos, setCursos] = useState([]);
+    const [faculdades, setFaculdades] = useState([])
+    const [dadosCarregados, setDadosCarregados] = useState(false)
 
     useEffect(() => {
         const getCursos = async () => {
             try{
-                let response = await axios.get('http://localhost:8000/cursos/')
+                let response = await blogfetch.get('cursos/')
                 setCursos(response.data)
+                setDadosCarregados(true)
             }
             catch(error){
                 console.log(error)
             }
         }
-        getCursos();
         
+
+        const getQuantasFaculdades = async (id_curso) => {
+            try{
+                let response = await blogfetch.get(`curso/${id_curso}/faculdades/`)
+                setFaculdades(response.data)
+                
+            }
+            catch(error){
+                console.log(error)
+            }
+        }
+        
+        getCursos();
     }, []);
       
     return <>
@@ -51,7 +67,7 @@ export default function Cursos() {
                 ): (
                     <div className="listar-cursos">
                         {cursos.map(curso => (
-                            <ListCursos 
+                            <ListCursos
                             key={curso.id}
                             nomeCurso={curso.nome}
                             link ={`/cursos/${curso.id}`}
@@ -59,9 +75,8 @@ export default function Cursos() {
                         ))}
                     </div>
                 )}
-
         </div>
-        
+        {dadosCarregados && <Footer />}
     </>
 }
 
