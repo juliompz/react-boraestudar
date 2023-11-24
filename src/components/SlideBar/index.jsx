@@ -12,9 +12,9 @@ import 'swiper/css';
 import "./slidebar.css"
 
 import { IoStar } from "react-icons/io5";
-import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import logoUFPI from '../../assets/Brasao_UFPI.png'
-
+import logoUNINASSAU from "../../assets/logo-uninassau.png"
+import logoICEV from "../../assets/ICEV.png"
 
 export default function SlideBar(){
     return <>
@@ -22,242 +22,195 @@ export default function SlideBar(){
         <div className="container-area-faculdades">
             <div className="introducao">
                 <h1>Faculdades mais bem pontuadas (MEC)</h1>
-                <p>Mostrando 12 perto de <strong>Teresina-PI</strong></p>
+                <p>Mostrando 6 perto de <strong>Teresina-PI</strong></p>
             </div>
             <div className="area-swiper">
                 <Swiper
                     modules={[Navigation, Pagination]}
-                    slidesPerView={3}
+                    slidesPerView={4}
                     pagination={{ clickable: true}}
                     navigation
                     >
-                    <div className="dentro-do-swiper">
-                        <SwiperSlide>
-                        <div className="faculdade-ranqueada">
-                            <div className="content-faculdade-ranqueada">
-                                <div className="img-e-detalhe">
-                                    <div className="img-faculdade">
-                                        <img src={logoUFPI} alt="Foto" />
-                                    </div>
-                                    <div className="area-do-detalhe">
-                                        <div className="nota-max-mec">
-                                            <p>Nota máxima no MEC</p>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div className="info-faculdade">
-                                    <h1>Universidade Federal do Piauí</h1>
-                                    <p>Av. Universitária, Bairro Ininga - THE</p>
-                                    <p><IoStar /> <IoStar /><IoStar /><IoStar /><IoStar /></p>
-                                    <p>(Nota 5 no MEC)</p>
-                                </div>
-                            </div>
-                        </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                        <div className="faculdade-ranqueada">
-                            <div className="content-faculdade-ranqueada">
-                                <div className="img-e-detalhe">
-                                    <div className="img-faculdade">
-                                        <img src={logoUFPI} alt="Foto" />
-                                    </div>
-                                    <div className="area-do-detalhe">
-                                        <div className="nota-max-mec">
-                                            <p>Nota máxima no MEC</p>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div className="info-faculdade">
-                                    <h1>Universidade Federal do Piauí</h1>
-                                    <p>Av. Universitária, Bairro Ininga - THE</p>
-                                    <p><IoStar /> <IoStar /><IoStar /><IoStar /><IoStar /></p>
-                                    <p>(Nota 5 no MEC)</p>
-                                </div>
-                            </div>
-                        </div>
-                        </SwiperSlide>
-
-                        <SwiperSlide>
-                        <div className="faculdade-ranqueada">
-                            <div className="content-faculdade-ranqueada">
-                                <div className="img-e-detalhe">
-                                    <div className="img-faculdade">
-                                        <img src={logoUFPI} alt="Foto" />
-                                    </div>
-                                    <div className="area-do-detalhe">
-                                        <div className="nota-max-mec">
-                                            <p>Nota máxima no MEC</p>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div className="info-faculdade">
-                                    <h1>Universidade Federal do Piauí</h1>
-                                    <p>Av. Universitária, Bairro Ininga - THE</p>
-                                    <p><IoStar /> <IoStar /><IoStar /><IoStar /><IoStar /></p>
-                                    <p>(Nota 5 no MEC)</p>
-                                </div>
-                            </div>
-                        </div>
-                        </SwiperSlide>
-
-                        <SwiperSlide>
-                        <div className="faculdade-ranqueada">
-                            <div className="content-faculdade-ranqueada">
-                                <div className="img-e-detalhe">
-                                    <div className="img-faculdade">
-                                        <img src={logoUFPI} alt="Foto" />
-                                    </div>
-                                    <div className="area-do-detalhe">
-                                        <div className="nota-max-mec">
-                                            <p>Nota máxima no MEC</p>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div className="info-faculdade">
-                                    <h1>Universidade Federal do Piauí</h1>
-                                    <p>Av. Universitária, Bairro Ininga - THE</p>
-                                    <p><IoStar /> <IoStar /><IoStar /><IoStar /><IoStar /></p>
-                                    <p>(Nota 5 no MEC)</p>
-                                </div>
-                            </div>
-                        </div>
-                        </SwiperSlide>
-
-                        <SwiperSlide>
-                        <div className="faculdade-ranqueada">
-                            <div className="content-faculdade-ranqueada">
-                                <div className="img-e-detalhe">
-                                    <div className="img-faculdade">
-                                        <img src={logoUFPI} alt="Foto" />
-                                    </div>
-                                    <div className="area-do-detalhe">
-                                        <div className="nota-max-mec">
-                                            <p>Nota máxima no MEC</p>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div className="info-faculdade">
-                                    <h1>Universidade Federal do Piauí</h1>
-                                    <p>Av. Universitária, Bairro Ininga - THE</p>
-                                    <p><IoStar /> <IoStar /><IoStar /><IoStar /><IoStar /></p>
-                                    <p>(Nota 5 no MEC)</p>
-                                </div>
-                            </div>
-                        </div>
-                        </SwiperSlide>
-
-                        <SwiperSlide>
-                        <div className="faculdade-ranqueada">
-                            <div className="content-faculdade-ranqueada">
-                                <div className="img-e-detalhe">
-                                    <div className="img-faculdade">
-                                        <img src={logoUFPI} alt="Foto" />
-                                    </div>
-                                    <div className="area-do-detalhe">
-                                        <div className="nota-max-mec">
-                                            <p>Nota máxima no MEC</p>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div className="info-faculdade">
-                                    <h1>Universidade Federal do Piauí</h1>
-                                    <p>Av. Universitária, Bairro Ininga - THE</p>
-                                    <p><IoStar /> <IoStar /><IoStar /><IoStar /><IoStar /></p>
-                                    <p>(Nota 5 no MEC)</p>
-                                </div>
-                            </div>
-                        </div>
-                        </SwiperSlide>
-
-                        <SwiperSlide>
-                        <div className="faculdade-ranqueada">
-                            <div className="content-faculdade-ranqueada">
-                                <div className="img-e-detalhe">
-                                    <div className="img-faculdade">
-                                        <img src={logoUFPI} alt="Foto" />
-                                    </div>
-                                    <div className="area-do-detalhe">
-                                        <div className="nota-max-mec">
-                                            <p>Nota máxima no MEC</p>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div className="info-faculdade">
-                                    <h1>Universidade Federal do Piauí</h1>
-                                    <p>Av. Universitária, Bairro Ininga - THE</p>
-                                    <p><IoStar /> <IoStar /><IoStar /><IoStar /><IoStar /></p>
-                                    <p>(Nota 5 no MEC)</p>
-                                </div>
-                            </div>
-                        </div>
-                        </SwiperSlide>
-
-                        <SwiperSlide>
-                        <div className="faculdade-ranqueada">
-                            <div className="content-faculdade-ranqueada">
-                                <div className="img-e-detalhe">
-                                    <div className="img-faculdade">
-                                        <img src={logoUFPI} alt="Foto" />
-                                    </div>
-                                    <div className="area-do-detalhe">
-                                        <div className="nota-max-mec">
-                                            <p>Nota máxima no MEC</p>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div className="info-faculdade">
-                                    <h1>Universidade Federal do Piauí</h1>
-                                    <p>Av. Universitária, Bairro Ininga - THE</p>
-                                    <p><IoStar /> <IoStar /><IoStar /><IoStar /><IoStar /></p>
-                                    <p>(Nota 5 no MEC)</p>
-                                </div>
-                            </div>
-                        </div>
-                        </SwiperSlide>
-
-                        <SwiperSlide>
-                        <div className="faculdade-ranqueada">
-                            <div className="content-faculdade-ranqueada">
-                                <div className="img-e-detalhe">
-                                    <div className="img-faculdade">
-                                        <img src={logoUFPI} alt="Foto" />
-                                    </div>
-                                    <div className="area-do-detalhe">
-                                        <div className="nota-max-mec">
-                                            <p>Nota máxima no MEC</p>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div className="info-faculdade">
-                                    <h1>Universidade Federal do Piauí</h1>
-                                    <p>Av. Universitária, Bairro Ininga - THE</p>
-                                    <p><IoStar /> <IoStar /><IoStar /><IoStar /><IoStar /></p>
-                                    <p>(Nota 5 no MEC)</p>
-                                </div>
-                            </div>
-                        </div>
-                        </SwiperSlide>
-                    </div>
                     
+                    <SwiperSlide>
+                        <div className="faculdade-ranqueada">
+                            <div className="content-faculdade-ranqueada">
+                                <div className="img-e-detalhe">
+                                    <div className="img-faculdade">
+                                        <img src={logoUFPI} alt="Foto" />
+                                    </div>
+                                    <div className="area-do-detalhe">
+                                        <div className="nota-max-mec">
+                                            <p>Nota máxima no MEC</p>
+                                        </div>
+                                    </div>
 
+                                </div>
+
+                                <div className="info-faculdade">
+                                    <h1>Universidade Federal do Piauí</h1>
+                                    <p>Av. Universitária, Bairro Ininga - THE</p>
+                                    <div className="nota-mec">
+                                        <div className="stars">
+                                            <IoStar /> <IoStar /><IoStar /><IoStar /><IoStar />
+                                        </div>
+                                        <p>(Nota 5 no MEC)</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        </SwiperSlide>
+
+                        <SwiperSlide>
+                        <div className="faculdade-ranqueada">
+                            <div className="content-faculdade-ranqueada">
+                                <div className="img-e-detalhe">
+                                    <div className="img-faculdade">
+                                        <img src={logoUNINASSAU} alt="Foto" />
+                                    </div>
+                                    <div className="area-do-detalhe">
+                                        <div className="nota-max-mec">
+                                            <p>Nota máxima no MEC</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div className="info-faculdade">
+                                    <h1>Universidade Maurício de Nassau</h1>
+                                    <p>Av. Joquei Clube, Joquei - THE</p>
+                                    <div className="nota-mec">
+                                        <div className="stars">
+                                            <IoStar /> <IoStar /><IoStar /><IoStar /><IoStar />
+                                        </div>
+                                        <p>(Nota 5 no MEC)</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        </SwiperSlide>
+
+                        <SwiperSlide>
+                        <div className="faculdade-ranqueada">
+                            <div className="content-faculdade-ranqueada">
+                                <div className="img-e-detalhe">
+                                    <div className="img-faculdade">
+                                        <img src={logoICEV} alt="Foto" />
+                                    </div>
+                                    <div className="area-do-detalhe">
+                                        <div className="nota-max-mec">
+                                            <p>Nota máxima no MEC</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div className="info-faculdade">
+                                    <h1>ICEV</h1>
+                                    <p>Av. Kennedy, Fátima - THE</p>
+                                    <div className="nota-mec">
+                                        <div className="stars">
+                                            <IoStar /> <IoStar /><IoStar /><IoStar /><IoStar />
+                                        </div>
+                                        <p>(Nota 5 no MEC)</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        </SwiperSlide>
+
+                        <SwiperSlide>
+                        <div className="faculdade-ranqueada">
+                            <div className="content-faculdade-ranqueada">
+                                <div className="img-e-detalhe">
+                                    <div className="img-faculdade">
+                                        <img src={logoUFPI} alt="Foto" />
+                                    </div>
+                                    <div className="area-do-detalhe">
+                                        <div className="nota-max-mec">
+                                            <p>Nota máxima no MEC</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div className="info-faculdade">
+                                    <h1>Universidade Federal do Piauí</h1>
+                                    <p>Av. Universitária, Bairro Ininga - THE</p>
+                                    <div className="nota-mec">
+                                        <div className="stars">
+                                            <IoStar /> <IoStar /><IoStar /><IoStar /><IoStar />
+                                        </div>
+                                        <p>(Nota 5 no MEC)</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        </SwiperSlide>
+
+                        <SwiperSlide>
+                        <div className="faculdade-ranqueada">
+                            <div className="content-faculdade-ranqueada">
+                                <div className="img-e-detalhe">
+                                    <div className="img-faculdade">
+                                        <img src={logoUFPI} alt="Foto" />
+                                    </div>
+                                    <div className="area-do-detalhe">
+                                        <div className="nota-max-mec">
+                                            <p>Nota máxima no MEC</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div className="info-faculdade">
+                                    <h1>Universidade Federal do Piauí</h1>
+                                    <p>Av. Universitária, Bairro Ininga - THE</p>
+                                    <div className="nota-mec">
+                                        <div className="stars">
+                                            <IoStar /> <IoStar /><IoStar /><IoStar /><IoStar />
+                                        </div>
+                                        <p>(Nota 5 no MEC)</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        </SwiperSlide>
+
+                        <SwiperSlide>
+                        <div className="faculdade-ranqueada">
+                            <div className="content-faculdade-ranqueada">
+                                <div className="img-e-detalhe">
+                                    <div className="img-faculdade">
+                                        <img src={logoUFPI} alt="Foto" />
+                                    </div>
+                                    <div className="area-do-detalhe">
+                                        <div className="nota-max-mec">
+                                            <p>Nota máxima no MEC</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div className="info-faculdade">
+                                    <h1>Universidade Federal do Piauí</h1>
+                                    <p>Av. Universitária, Bairro Ininga - THE</p>
+                                    <div className="nota-mec">
+                                        <div className="stars">
+                                            <IoStar /> <IoStar /><IoStar /><IoStar /><IoStar />
+                                        </div>
+                                        <p>(Nota 5 no MEC)</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        </SwiperSlide>
                 </Swiper>
             </div>
         </div>

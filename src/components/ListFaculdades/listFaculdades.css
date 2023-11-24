@@ -4,8 +4,8 @@
     width: 550px;
     display: flex;
     cursor: pointer;
-    padding: 5px;
-    border-bottom: 1px dashed #bcbcbd;
+    padding: 5px 5px 20px 5px;
+    border-bottom: 1px solid #bcbcbd;
     justify-content: space-between;
     align-items: center;
 }

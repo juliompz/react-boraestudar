@@ -1,12 +1,14 @@
 
 
 .container-area-faculdades{
-    margin-left: 90px;
-    margin-bottom: 25px;
+    margin-left: 45px;
+    margin-right: 45px;
+    margin-bottom: 50px;
 }
 
 .introducao {
     margin-bottom: 14px;
+    margin-left: 70px;
     margin-top: 35px;
     gap: 3px;
 }
@@ -19,8 +21,11 @@
 
 .faculdade-ranqueada {
     text-align: center;
-    width: 337px;
+    width: 300px;
     height: 207px;
+    margin-left: 70px;
+    margin-right: 10px;
+    margin-bottom: 30px;
     border-radius: 10px;
     background: #fff;
 }
@@ -37,6 +42,12 @@
     padding: 0 20px;
     text-align: start;
     width: min-content;
+
+}
+
+.img-faculdade img {
+    width: 80px;
+    height: 80px;
 }
 
 .area-do-detalhe{
@@ -71,6 +82,24 @@
     font-size: 10px;
 }
 
+.nota-mec {
+    display: flex;
+    gap: 5px;
+    margin-top: 5px;
+    align-items: center;
+}
+
+.nota-mec p{
+    color: #7C7C7C;
+    font-size: 8px;
+}
+
+.stars svg {
+    color: #FBC400;
+}
+
+/* parte do swiper // slidebar */
+
 .swiper-button-prev, .swiper-button-next{
     width: 40px;
     border-radius: 8px;
@@ -81,4 +110,8 @@
 
 .swiper-button-prev::after, .swiper-button-next::after {
     font-size: 15px !important;
+}
+
+.dentro-do-swiper {
+    width: 50%;
 }
