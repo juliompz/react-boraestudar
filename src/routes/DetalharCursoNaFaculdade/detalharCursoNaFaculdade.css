@@ -1,0 +1,54 @@
+
+.container-detalher-curso-faculdade {
+    margin-top: 20px;
+    padding-left: 100px;
+    padding-bottom: 300px;
+}
+
+.content-title {
+    margin-top: 30px;
+}
+
+.content-title strong {
+    color: #104EFF;
+}
+
+.content-informacoes {
+    display: flex;
+    margin-top: 30px;
+}
+
+.sec-infos h1 {
+    padding-right: 400px;
+    width:min-content;
+    color: #104EFF;
+    font-size: 20px;
+    border-bottom: 1px solid #104EFF;
+}
+
+.sec-infos {
+    width: 50%;
+}
+
+.detalhes {
+    margin-top: 10px;
+}
+
+.detalhes strong{
+    font-weight: 500;
+    color: #104EFF;
+}
+
+.sec-outros-cursos {
+    margin-left: 50px;
+    width: 50%;
+    margin-right: 40px;
+}
+
+.outros-cursos-info-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.outros-cursos-info strong {
+    color: #104EFF;
+}
