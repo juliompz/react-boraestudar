@@ -1,8 +1,10 @@
 .box-curso{
   display: flex;
   width: 923px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
   justify-content: space-between;
+  border-bottom: 1px solid #bcbcbd;
 }
 
 .nome-curso h1 {
