@@ -1,28 +1,61 @@
 
-.faculdade-container {
-    margin-top: 50px;
-    margin-left: 40px;
+.container-detalhar-faculdade {
+    margin-left: 110px;
+    margin-top: 20px;
+    padding-bottom: 200px;
 }
 
-.faculdade-title {
-    width: min-content;
+.dividir-secoes {
+    display: flex;
 }
 
-.faculdade-title h1.t{
+.detalhes-da-faculdade {
+    width: 50%;
+}
+
+.detalharfaculdade-nome {
+    margin-top: 30px;
+}
+
+.detalharfaculdade-nome p {
     color: #104EFF;
-    border-bottom: 1px solid;
-    margin-bottom: 50px;
 }
 
-.faculdade-info h1{
+.faculdade-infos {
+    width: 50%;
+    margin-top: 50px;
+}
+
+.faculdade-infos h1, .cursos-da-faculdade h1.cursos-da-faculdade-title {
+    color: #104EFF;
     font-size: 20px;
-    margin-bottom: 10px;
+    border-bottom: 1px solid #104EFF;
+    width: max-content;
+    padding-right: 80px;
 }
 
+.faculdade-infos-content {
+    padding-top: 10px;
+}
 
+.faculdade-infos-content strong {
+    color: #104EFF;
+    font-weight: 500
+}
 
-.imagem {
-    width: 333px;
-    height: 333px;
-    background-color: red;
+.faculdade-infos-content p {
+    margin-bottom: 5px;
+}
+
+/* Seção de cursos disponiveis */
+
+.cursos-da-faculdade {
+    width: 50%;
+    margin-top: 50px;
+    margin-left: 70px;
+}
+
+.faculdade-cursos-disponiveis {
+    margin-top: 20px;
+    margin-right: 40px;
 }
