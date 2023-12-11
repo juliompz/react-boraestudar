@@ -1,0 +1,26 @@
+
+
+.container-faculdades {
+    padding-left: 100px;
+    margin-top: 20px;
+    padding-bottom: 260px;
+}
+
+.listar-faculdades p strong{
+    color: #104EFF;
+    font-weight: 500;
+}
+
+.title-listar-faculdades {
+    margin-top: 13px;
+    margin-bottom: 50px;
+}
+
+.title-listar-faculdades p strong{
+    color: #104EFF;
+    font-weight: 500;
+}
+
+.box-faculdades {
+    width: 923px;
+}
