@@ -1,0 +1,88 @@
+/* INPUT PESQUISA */
+.search-container{
+    width: 490px;
+    display: block;
+    margin: 0 auto;
+    height: 80px;
+  }
+  
+input#search-bar{
+    margin: 0 auto;
+    width: 90%;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 1rem;
+    border: 1px solid #D0CFCE;
+    border-radius: 5px;
+    outline: none;
+    &:focus{
+      border: 1px solid #000000;
+      transition: 0.35s ease;
+      color: #000000;
+      &::-webkit-input-placeholder{
+        transition: opacity 0.45s ease; 
+          opacity: 0;
+       }
+      &::-moz-placeholder {
+        transition: opacity 0.45s ease; 
+          opacity: 0;
+       }
+      &:-ms-placeholder {
+       transition: opacity 0.45s ease; 
+         opacity: 0;
+       }    
+     }
+}
+  
+/* fim input pesquisa */
+
+.box-pesquisar {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* PARTE DE PESQUISA */
+
+
+.buscar-curso{
+  display: flex;
+  padding-top: 25px;
+  padding-right: 50px;
+}
+
+.title{
+  color: #fff;
+  display: flex;
+  padding-left: 110px;
+  padding-top: 25px;
+}
+
+
+.box-pesquisa{
+  background-color: #fff;
+  position: fixed;
+  width: 480px;
+  margin-top: 45px;
+  border-radius: 8px;
+  border: 3px solid #104EFF;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block; /* ou qualquer outra propriedade que você desejar */
+}
+
+.box-pesquisa li {
+  padding: 5px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  background-color: #1050ff14;
+  cursor: pointer;
+}
+
+.box-pesquisa li:hover{
+background-color: #1050ff54;
+}
