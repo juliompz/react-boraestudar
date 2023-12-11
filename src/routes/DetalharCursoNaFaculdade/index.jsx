@@ -24,8 +24,8 @@ export default function DetalharCursoNaFaculdade() {
                 let response = await blogfetch.get(`faculdade-curso/?curso_id=${cursoId}&faculdade_id=${faculdadeId}`)
                 console.log(response.data)
                 setCurso(response.data[0])
-                setNome(response.data[0].curso.nome)
-                console.log("---------" + response.data[0].curso.nome)
+                console.log("Curso data:", response.data[0].curso.nome);
+                setNome(response.data[0].curso.nome);
                 setDadosCarregados(true)
             } catch(error) {
                 console.log(error)

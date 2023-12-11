@@ -75,9 +75,7 @@ section.sec2 {
 }
 
 .list-faculdades {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    width: 550px;
 }
 
 .faculdade-nome{
