@@ -31,7 +31,6 @@ export default function Navbar () {
         <div className="navbar-itens">
             <p><Link to={'/faculdades'}>Faculdades</Link></p>
             <p><Link to={'/cursos'}>Cursos</Link></p>
-            <p><Link>Sobre Nós</Link></p>
             
         </div>
 
@@ -44,11 +43,8 @@ export default function Navbar () {
                 </div>
 
                 <div className="navbar-itens-mobile">
-                    <p><Link>Faculdades</Link></p>
+                    <p><Link to={'/faculdades'}>Faculdades</Link></p>
                     <p><Link to={'/cursos'}>Cursos</Link></p>
-                    <p><Link>Profissões</Link></p>
-                    <p><Link>Sobre Nós</Link></p>
-                    <p><Link>Ajuda</Link></p>
                 </div>
             
             </div>

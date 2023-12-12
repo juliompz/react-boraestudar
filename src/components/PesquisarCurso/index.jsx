@@ -3,6 +3,7 @@ import "./pesquisarCurso.css"
 import axios from "axios";
 
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 export default function PesquisarCurso(){
 
@@ -43,7 +44,7 @@ export default function PesquisarCurso(){
                     <div className={`box-pesquisa ${search ? 'visible' : 'hidden'}`}>
                         <ul>
                             {searchCursos.map(curso => (
-                                <li key={curso.id}>{curso.nome}</li>
+                                <Link to={`/cursos/${curso.id}`}><li key={curso.id}>{curso.nome}</li></Link>
                             ))}
                         </ul>
                     </div>

@@ -21,6 +21,20 @@
     padding-top: 9px;
 }
 
+.navbar-itens p::after {
+    content: "";
+    background-color: #104EFF;
+    height: 3px;
+    width: 0%;
+    margin: 0 auto;
+    display: block;
+    transition: 0.3s;
+}
+
+.navbar-itens p:hover::after {
+    width: 100%;
+}
+
 
 /* menu mobile */
 
