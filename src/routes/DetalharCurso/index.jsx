@@ -89,9 +89,8 @@ export default function DetalharCurso() {
                             <div className="list-faculdades">
                                 {faculdades.map(faculdade => (
                                     
-                                    <Link to={`/faculdade/${faculdade.faculdade_id}/curso/${id}`}>
+                                    <Link key={faculdade.faculdade_sigla} to={`/faculdade/${faculdade.faculdade_id}/curso/${id}`}>
                                         <ListFaculdades
-                                        key={faculdade.faculdade_sigla}
                                         faculdade_nome={faculdade.faculdade_nome}
                                         faculdade_sigla={faculdade.faculdade_sigla}
                                         />

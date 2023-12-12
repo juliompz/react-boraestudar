@@ -11,6 +11,7 @@ import ListCursos from "../../components/ListCursos";
 import BotaoVoltar from "../../components/BotaoVoltar";
 import PesquisarCurso from "../../components/PesquisarCurso";
 import blogfetch from "../../axios/config";
+import { Link } from "react-router-dom";
 
 export default function Cursos() {
 
@@ -54,7 +55,9 @@ export default function Cursos() {
         <div className="list-content">
                 <div className="list-content-title">
                     <div className="voltar">
-                        <BotaoVoltar />
+                    <BotaoVoltar 
+                    voltarPara={'/'}
+                    />
                     </div>
 
                     <div className="titulo-list-cursos">
@@ -67,11 +70,12 @@ export default function Cursos() {
                 ): (
                     <div className="listar-cursos">
                         {cursos.map(curso => (
-                            <ListCursos
-                            key={curso.id}
-                            nomeCurso={curso.nome}
-                            link ={`/cursos/${curso.id}`}
-                            />
+                            <Link key={curso.id} to={`/cursos/${curso.id}`}>
+                                <ListCursos
+                                nomeCurso={curso.nome}
+                                />
+                            </Link>
+
                         ))}
                     </div>
                 )}

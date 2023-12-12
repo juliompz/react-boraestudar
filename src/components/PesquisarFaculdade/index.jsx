@@ -3,6 +3,7 @@ import "./pesquisarFaculdade.css"
 import blogfetch from "../../axios/config";
 
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 export default function PesquisarFaculdades(){
 
@@ -24,7 +25,7 @@ export default function PesquisarFaculdades(){
     }, []);
 
     const searchFaculdades = faculdades.filter((curso) =>
-    curso.nome.toLowerCase().includes(search.toLowerCase())
+    curso.nome.toLowerCase().includes(search.toLowerCase()) || curso.sigla.toLowerCase().includes(search.toLowerCase())
     );
 
     return <>
@@ -43,7 +44,7 @@ export default function PesquisarFaculdades(){
                     <div className={`box-pesquisa ${search ? 'visible' : 'hidden'}`}>
                         <ul>
                             {searchFaculdades.map(faculdade => (
-                                <li key={faculdade.id}>{faculdade.nome}</li>
+                                <Link to={`/faculdade/${faculdade.id}`}><li key={faculdade.id}>{faculdade.nome}</li></Link>
                             ))}
                         </ul>
                     </div>
