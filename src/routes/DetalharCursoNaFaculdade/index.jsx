@@ -70,7 +70,7 @@ export default function DetalharCursoNaFaculdade() {
                 <div className="retornar">
                     <div className="content-title">
                         <h1>Curso <strong>{nome}</strong></h1>
-                        <p>na <strong>UNINASSAU</strong></p>
+                        <p>na <strong>{curso.sigla_faculdade}</strong></p>
                     </div>
 
                     <div className="content-informacoes">
@@ -87,7 +87,7 @@ export default function DetalharCursoNaFaculdade() {
                         <hr />
                         <section className="sec-outros-cursos">
                             <div className="outros-cursos-info">
-                                <h1 className="outros-cursos-info-title">Outros cursos em <strong>UNINASSAU</strong></h1>
+                                <h1 className="outros-cursos-info-title">Outros cursos em <strong>{curso.sigla_faculdade}</strong></h1>
                                 {cursosFiltrados.map(curso => (
                                     <div onClick={clicarOutroCurso} key={curso.cursoId}>
                                         <Link  to={`/faculdade/${faculdadeId}/curso/${curso.cursoId}` }>
