@@ -115,3 +115,20 @@
 .dentro-do-swiper {
     width: 50%;
 }
+
+@media screen and (max-width: 815px) {
+    .faculdade-ranqueada{
+        width: 80%;
+    }
+
+    .container-area-faculdades{
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .faculdade-ranqueada{
+        width: 65%;
+    }
+}

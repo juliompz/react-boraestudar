@@ -4,6 +4,7 @@ import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination  } from 'swiper/modules';
+import { useState, useEffect } from "react";
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
@@ -17,6 +18,35 @@ import logoUNINASSAU from "../../assets/logo-uninassau.png"
 import logoICEV from "../../assets/ICEV.png"
 
 export default function SlideBar(){
+
+    const [slidePerView, setSlidePerView ] = useState(4);
+
+    
+    useEffect(() => {
+        
+        function handleResize(){
+            if(window.innerWidth < 1312 && window.innerWidth > 1031){
+                setSlidePerView(3)
+            }else if(window.innerWidth < 1030 && window.innerWidth > 815){
+                setSlidePerView(2)
+            }else if(window.innerWidth < 815){
+                setSlidePerView(1)
+            }else if(window.innerWidth < 1337){
+                setSlidePerView(3)
+            }else{
+                setSlidePerView(4)
+            }
+        };
+
+        handleResize();
+
+        window.addEventListener("resize", handleResize)
+
+        return () => {
+            window.removeEventListener("resize", handleResize)
+        }
+    }, [])
+
     return <>
 
         <div className="container-area-faculdades">
@@ -27,7 +57,7 @@ export default function SlideBar(){
             <div className="area-swiper">
                 <Swiper
                     modules={[Navigation, Pagination]}
-                    slidesPerView={4}
+                    slidesPerView={slidePerView}
                     pagination={{ clickable: true}}
                     navigation
                     >
